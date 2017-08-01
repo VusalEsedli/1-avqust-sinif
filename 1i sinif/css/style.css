@@ -1,0 +1,33 @@
+.font{ position: relative;
+    color:green;
+    border-radius: 100%;
+   border: 3px solid green;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.font::before{content:"";
+    border:1px solid green;
+    border-radius:100%;
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:1px;
+    right: -2px;
+}
+
+
+.font::after{
+    content:"";
+    border:1px solid green;
+    border-radius:100%;
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:35px;
+    right: 40px;
+}
